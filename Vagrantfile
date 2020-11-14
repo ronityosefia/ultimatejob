@@ -13,12 +13,20 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "fedora/32-cloud-base"
+<<<<<<< HEAD
   config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "1024"
   end
 
 
+=======
+  config.vm.synced_folder ".","/vagrant", type:"virtualbox"
+
+  config.vm.provider "virtualbox" do |vb|
+   vb.memory="1024"
+   end
+>>>>>>> a41713d63e3c8d3991f8007fe150323446e5b0ec
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
